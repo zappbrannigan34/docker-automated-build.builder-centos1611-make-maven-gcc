@@ -31,7 +31,7 @@ rm -rf /var/cache/yum
 
 RUN echo "root:root" | chpasswd
 
-# Install a basic SSH server
+#Install a basic SSH server
 
 RUN yum install -y openssh-server openssh-clients shadow-utils && \
     ssh-keygen -q -b 1024 -N '' -t rsa -f /etc/ssh/ssh_host_rsa_key && \
