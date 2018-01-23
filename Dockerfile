@@ -50,3 +50,4 @@ RUN rm -rf /var/cache/yum
 
 EXPOSE 22
 CMD ["/usr/sbin/sshd", "-D"]
+
